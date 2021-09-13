@@ -43,12 +43,21 @@ a {
 .header {
   position: relative;
   background-color: $background-color;
+  @media(min-width: 700px){
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .header__title {
   font-size: $font-h1;
   font-weight: $bold-sen;
   color: $brand-color;
+  @media(min-width: 700px){
+    font-size: 10rem;
+  }
 }
 
 .text {
@@ -131,9 +140,14 @@ a {
 
 .carusel{
   padding: 15px;
+  background-image: url('https://raw.githubusercontent.com/jcamilodev1/crops/e1945e1f0537dbd657972cde7e6772d5806544ab/src/assets/bg-swiper.svg');
+  @media(min-width: 700px){
+    padding: 40px;
+  }
   p{
-    font-size: 18px;
+    font-size: 22px;
     font-family: $sen-font;
+    margin-bottom: 30px;
   }
   .swiper {
     width: 100%;
@@ -143,9 +157,6 @@ a {
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    padding: 20px;
-    width: 300px;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
