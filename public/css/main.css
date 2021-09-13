@@ -1,3 +1,47 @@
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pt-3_125 {
+  padding-top: 3.125rem;
+}
+
+.pi-1 {
+  padding-inline: 1rem;
+}
+
+.pi-1_875 {
+  padding-inline: 1.875rem;
+}
+
+.pi-3 {
+  padding-inline: 3rem;
+}
+
+.pbl-4 {
+  padding-block: 4rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pb-1_5 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-3_125 {
+  padding-bottom: 3.125rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.mbl-1 {
+  margin-block: 1rem;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -210,5 +254,58 @@ a {
   position: absolute;
   bottom: -140px;
   left: 0;
+}
+
+.carusel {
+  padding: 15px;
+}
+
+.carusel p {
+  font-size: 18px;
+  font-family: "Sen", sans-serif;
+}
+
+.carusel .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.carusel .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carusel .swiper-slide picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  height: 60%;
+  padding: 20px;
+  border: 2px solid #5fa348;
+  border-radius: 20px;
+}
+
+.carusel .swiper-slide picture img {
+  width: 80%;
+  height: 80%;
 }
 /*# sourceMappingURL=main.css.map */
