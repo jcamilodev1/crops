@@ -14,8 +14,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
     <title>Webpack</title>
   </head>
   <body>
@@ -128,10 +130,36 @@
           <p class="text text--big text--green">¡Bienvenido a CROPS!</p>
           <a href="#" class="button mbl-1">Descarga la app</a>
         </div>
-        <div>
+        <div class="carusel">
           <p>¿Qué vas a cultivar?</p>
+          <section class="swiper mySwiper">
+            <section class="swiper-wrapper">
+              <article class="swiper-slide">
+                <picture>
+                  <img src="./assets/rose.svg"/>
+                </picture>
+              </article>
+              <article class="swiper-slide">
+                <picture>
+                  <img src="./assets/rose.svg"/>
+                </picture>
+              </article>
+              <article class="swiper-slide">
+                <picture>
+                  <img src="./assets/rose.svg"/>
+                </picture>
+              </article>
+              <article class="swiper-slide">
+                <picture>
+                  <img src="./assets/rose.svg"/>
+                </picture>
+              </article>
+            </section>
+          </section>
         </div>
       </section>
     </div>
+        
+
   </body>
 </html>
