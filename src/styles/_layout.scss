@@ -1,3 +1,31 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  text-align: center;
+  font-family: $sen-font;
+  font-weight: $regular-sen;
+}
+
+a {
+  color: $black-text;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
 .pt-3 {
   padding-top: 3rem;
 }

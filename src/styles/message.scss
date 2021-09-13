@@ -1,0 +1,19 @@
+@import "variables";
+@import "layout";
+
+.header {
+  position: relative;
+  background-color: $background-color;
+  background-image: url("https://raw.githubusercontent.com/jcamilodev1/crops/06d27e73823f810109cc5b052563c4e9f322277a/src/assets/bgheader.svg");
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--text {
+    color: $black-text;
+    font-size: $font-p;
+    max-width: 600px;
+  }
+}

@@ -1,0 +1,103 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  text-align: center;
+  font-family: "Sen", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #4e4e4e;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pt-3_125 {
+  padding-top: 3.125rem;
+}
+
+.pi-1 {
+  padding-inline: 1rem;
+}
+
+.pi-1_875 {
+  padding-inline: 1.875rem;
+}
+
+.pi-3 {
+  padding-inline: 3rem;
+}
+
+.pbl-4 {
+  padding-block: 4rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pb-1_5 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-3_125 {
+  padding-bottom: 3.125rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.mbl-1 {
+  margin-block: 1rem;
+}
+
+.header {
+  position: relative;
+  background-color: #29bb89;
+  background-image: url("https://raw.githubusercontent.com/jcamilodev1/crops/06d27e73823f810109cc5b052563c4e9f322277a/src/assets/bgheader.svg");
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header--text {
+  color: #4e4e4e;
+  font-size: 1.125rem;
+  max-width: 600px;
+}
+/*# sourceMappingURL=message.css.map */

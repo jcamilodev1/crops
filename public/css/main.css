@@ -1,3 +1,36 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  text-align: center;
+  font-family: "Sen", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #4e4e4e;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
 .pt-3 {
   padding-top: 3rem;
 }
@@ -40,43 +73,6 @@
 
 .mbl-1 {
   margin-block: 1rem;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 16px;
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
-  scroll-behavior: smooth;
-}
-
-body {
-  overflow-x: hidden;
-  text-align: center;
-  font-family: "Sen", sans-serif;
-  font-weight: 400;
-}
-
-a {
-  color: #4e4e4e;
-  text-decoration: none;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-}
-
-.-relative {
-  position: relative;
 }
 
 .-bold {
@@ -157,6 +153,32 @@ a {
   width: 60%;
 }
 
+.section-tecnology {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 700px) {
+  .section-tecnology {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .section-tecnology-box {
+    max-width: 500px;
+    margin-right: 1rem;
+  }
+}
+
 .section-farmer {
   position: relative;
   display: -webkit-box;
@@ -204,6 +226,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 290px;
   padding: 1rem;
   background-color: #1e6f5c;

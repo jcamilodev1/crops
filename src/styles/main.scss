@@ -1,38 +1,6 @@
 @import "variables";
 @import "layout";
 
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  text-size-adjust: 100%;
-  scroll-behavior: smooth;
-}
-
-body {
-  overflow-x: hidden;
-  text-align: center;
-  font-family: $sen-font;
-  font-weight: $regular-sen;
-}
-
-a {
-  color: $black-text;
-  text-decoration: none;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-}
-
-.-relative {
-  position: relative;
-}
-
 .-bold {
   font-weight: $bold-sen;
 }
@@ -98,6 +66,22 @@ a {
   }
 }
 
+.section-tecnology {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  @media (min-width: 700px) {
+    flex-wrap: nowrap;
+
+    &-box {
+      max-width: 500px;
+      margin-right: 1rem;
+    }
+  }
+}
+
 .section-farmer {
   position: relative;
   display: flex;
@@ -120,6 +104,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 290px;
   padding: 1rem;
   background-color: $dark-green;
