@@ -90,12 +90,35 @@ a {
 .header {
   position: relative;
   background-color: #29bb89;
+  background-image: url("https://raw.githubusercontent.com/jcamilodev1/crops/06d27e73823f810109cc5b052563c4e9f322277a/src/assets/bgheader.svg");
+}
+
+@media (min-width: 700px) {
+  .header {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .header__title {
   font-size: 3rem;
   font-weight: 700;
   color: #d2e603;
+}
+
+@media (min-width: 700px) {
+  .header__title {
+    font-size: 10rem;
+  }
 }
 
 .text {
@@ -258,11 +281,19 @@ a {
 
 .carusel {
   padding: 15px;
+  background-image: url("https://raw.githubusercontent.com/jcamilodev1/crops/e1945e1f0537dbd657972cde7e6772d5806544ab/src/assets/bg-swiper.svg");
+}
+
+@media (min-width: 700px) {
+  .carusel {
+    padding: 40px;
+  }
 }
 
 .carusel p {
-  font-size: 18px;
+  font-size: 22px;
   font-family: "Sen", sans-serif;
+  margin-bottom: 30px;
 }
 
 .carusel .swiper {
@@ -273,9 +304,6 @@ a {
 .carusel .swiper-slide {
   text-align: center;
   font-size: 18px;
-  padding: 20px;
-  width: 300px;
-  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
