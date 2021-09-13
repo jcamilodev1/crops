@@ -28,6 +28,10 @@ a {
   font-size: 1rem;
 }
 
+.-relative {
+  position: relative;
+}
+
 .-bold {
   font-weight: $bold-sen;
 }
@@ -66,12 +70,14 @@ a {
 }
 
 .button {
+  position: relative;
   display: inline-block;
   padding: 0.5rem 1rem;
   background-color: $dark-green;
   color: $text-button;
   font-size: $font-small;
   border-radius: $border-radius-large;
+  z-index: 1;
 
   &--float {
     position: absolute;
@@ -82,6 +88,7 @@ a {
 }
 
 .section-farmer {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,6 +101,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 1;
 }
 
 .card {
@@ -126,4 +134,46 @@ a {
 .icon {
   color: $text-button;
   font-size: $font-icon;
+}
+
+.bg-pattern-plant {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+}
+
+.bg-pattern-second-plant {
+  position: absolute;
+  top: -172px;
+  right: 0;
+}
+
+.bg-pattern-third-plant {
+  position: absolute;
+  top: 158px;
+  left: 0;
+}
+
+.bg-pattern-fourth-plant {
+  position: absolute;
+  right: 0;
+  bottom: 228px;
+}
+
+.bg-pattern-fifth-plant {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+}
+
+.bg-pattern-sixth-plant {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.bg-pattern-seventh-plant {
+  position: absolute;
+  bottom: -140px;
+  left: 0;
 }
